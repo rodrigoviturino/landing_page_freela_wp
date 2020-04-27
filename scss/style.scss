@@ -1,0 +1,27 @@
+/*
+    Theme Name: Landing Page
+    Author: Rodrigo Viturino
+    Description: Landing Page para divulgação serviço
+    Version: 1.0.0
+*/
+
+/* Boostrap 4 */
+@import "./bootstrap/bootstrap-grid.scss";
+@import "./bootstrap/bootstrap-reboot.scss";
+@import "base/reset";
+/* end Boostrap 4 */
+
+/* Website */
+
+    @import "base/font";
+    @import "global";
+
+    /* Pages */
+
+    @import "header";
+    @import "pages/page-home";
+    /* end Pages */
+
+
+/* end Website */
+

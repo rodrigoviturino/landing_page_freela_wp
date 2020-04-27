@@ -1,0 +1,63 @@
+.header {
+    padding: map-get($spacers, 4) 0;
+    z-index: 1;
+
+    &__wrapper {
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+    
+        &__logo {
+            // margin-right: auto;
+        }
+
+        nav {
+            ul {
+                display: flex;
+                align-items: center;
+
+                li {
+                    margin: 0 map-get($spacers, 4);
+                    a {
+                        display: block;
+                        color: $white;
+                        font-weight: $font-weight-normal;
+                        text-transform: uppercase;
+                        @include responsive-font-size(15px);
+
+                        &:hover {
+                            color: #ff5733;
+                            text-decoration: none;
+                        }
+
+                    }
+                }
+            }
+        }
+
+        &__btn {
+            color: #fff;
+            background-color: transparent;
+            background: rgb(248,31,1);
+            background: linear-gradient(90deg, rgba(248,31,1,1) 0%, rgba(238,7,110,1) 100%); 
+            padding: map-get($spacers, 1) map-get($spacers, 2);
+            text-decoration: none;
+            transition: all 0.7s;
+            border-radius: 3px;
+            border: solid 2px transparent;
+            display: inline-block;
+            text-transform: uppercase;
+            font-weight: $font-weight-bold;
+            @include responsive-font-size(15px);
+
+            &:hover {
+                text-decoration: none;
+                color: #fff;
+                background: none;
+                border: solid 2px $white;
+                transition: all 0.7s;
+            }
+        }   
+
+    }
+}

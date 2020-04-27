@@ -1,0 +1,19 @@
+body {
+    // font-family: 'Roboto', sans-serif;
+    background-image: url('assets/images/bg-body.png');
+    background-color: #232531;
+    font-family: 'Montserrat', sans-serif;
+}
+
+
+.divisor-internal {
+    padding: 15px 0;
+}
+
+.divisor {
+    height: 0.7px;
+    width: 100%;
+    margin: map-get($spacers, 1) 0;
+    display: inline-block;
+    background-color: #ddd;
+}
