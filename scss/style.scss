@@ -16,6 +16,12 @@
     @import "base/font";
     @import "global";
 
+    /* Plugins */
+    @import "plugins/slick/slick.scss";
+    @import "plugins/slick/slick-theme.scss";
+    /* end Plugins */
+
+
     /* Pages */
 
     @import "header";

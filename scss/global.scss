@@ -17,3 +17,15 @@ body {
     display: inline-block;
     background-color: #ddd;
 }
+
+.slick-slide {
+    width: 20.5% ;
+    margin: 0 40px;
+}
+
+.slick-next {
+    right: 18px !important;
+}
+.slick-previous {
+    left: -18px !important;
+}

@@ -380,39 +380,96 @@
     }
 
     &__slide {
-        // position: relative;
+        position: relative;
+        width: 100%;
+        height: 600px;
         display: flex;
-        flex: 1;
+        justify-content: center;
+        align-items: center;
+        overflow: hidden;
 
         .card {
             position: relative;
-            height: 100%;
-            min-height: 500px;
-            width: 100%;
+            height: 532px;
+            width: 390px;
             display: flex;
+            justify-content: space-between;
             align-items: center;
-            justify-content: center;
+            overflow: hidden;
+            margin: 0 auto;
+            z-index: 0;
+            top: 0;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            transition: all 0.7s;
+            border-radius: 10px;
+            border: solid 2px transparent;
+            cursor: pointer;
+
+
+            &:hover {
+                transition: all 0.7s;
+                -webkit-transform: translateY(-5px);
+                transform: translateY(-8px);
+
+                &:after {
+                    // content: '';
+                    // display: block;
+                    // position: absolute;
+                    // top: 0;
+                    // bottom: 0;
+                    // right: 0;
+                    position: relative;
+                    width: 392px;
+                    right: 0;
+                    left: 0;
+                    background-color: #f6004e62;
+                    background-image: -webkit-gradient(linear, left top, left bottom, color-stop(10%, #f6004c), to(#000000));
+                    background-image: -webkit-linear-gradient(#f6004e69 10%, #000000 100%);
+                    background-image: -o-linear-gradient(#f6004e52 10%, #000000 100%);
+                    background-image: linear-gradient(#f6004e4d 10%, #000000 100%);
+                    transition: all 0.7s;
+                    // border: solid 2px #fff;
+                    border-radius: 10px;
+                    // z-index: 1;
+                }
+            }
 
             &:after {
-                // content: '';
+                content: "";
                 display: block;
-                height: 100vh;
+                height: 100%;
                 width: 100%;
-                background-color: rgba(34, 34, 34, 0.5);
+                overflow: hidden;
+                background-color: rgba(0, 0, 0, 0.226);
+                z-index: 0;
+                position: absolute;
+                top: 0;
+                bottom: 0;
+                left: -81px;
+                right: 0px;
+                transition: all 0.7s;
 
             }
 
             &-image {
                 position: absolute;
-                width: 100%;
-                margin: 0 auto;
-                text-align: center;
+                bottom: 0;
+                transition: all 0.7s;
+                
+
+                img {
+                    border-radius: 8px;
+                }
+
             }
 
             &-info {
                 position: absolute;
-                bottom: 0;
-                left: 0px;
+                bottom: 40px;
+                left: 28px;
+                z-index: 2;
 
                 .subtitle {
                     color: #c6c9d8;
@@ -423,7 +480,8 @@
                 .title {
                     color: $white;
                     line-height: 36px;
-                    @include responsive-font-size(24px);
+                    margin: map-get($spacers, 2) 0 map-get($spacers, 4);
+                    @include responsive-font-size(20px);
                 }
 
                 .btn {
@@ -438,7 +496,9 @@
 
                     &:hover {
                         text-decoration: none;
-                        background-color: #222;
+                        background: rgb(238,7,110);
+                        background: linear-gradient(90deg, rgba(238,7,110,1) 0%, rgba(248,31,1,1) 100%); 
+                        border: solid 2px #fff;
                     }
                 }
 
@@ -447,5 +507,113 @@
         }
 
     }
+
+}
+
+.clientes {
+    background-color: #00000036;
+    padding: 40px 0;
+    display: flex;
+    align-items: center;
+
+    &__block-title {
+
+        h2 {
+            font-weight: 700;
+            color: $white;
+            position: relative;
+            margin-bottom: map-get($spacers, 4);
+            @include responsive-font-size(54px);
+
+            &:after {
+                content: '';
+                display: block;
+                background-color: #ee076e;
+                height: 3px;
+                position: absolute;
+                left: -60px;
+                width: 100px;
+            }
+        }
+
+        p {
+            color: #c6c9d8;
+            line-height: 30px;
+            @include responsive-font-size(18px);
+        }
+    }
+
+    &__box {
+
+        ul {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+            li {
+                display: flex;    
+                a {
+                    img {
+                        filter: invert(1);
+                    }
+                }
+            }
+        }
+    }
+}
+
+.pricing {
+    &__block-title {
+
+        h2 {
+            font-weight: 700;
+            color: $white;
+            position: relative;
+            margin-bottom: map-get($spacers, 4);
+            @include responsive-font-size(54px);
+
+            &:after {
+                content: '';
+                display: block;
+                background-color: #ee076e;
+                height: 3px;
+                position: absolute;
+                left: -60px;
+                width: 100px;
+            }
+        }
+
+        p {
+            color: #c6c9d8;
+            line-height: 30px;
+            @include responsive-font-size(18px);
+        }
+
+    }
+
+    &__card {
+        header {
+
+            span {
+                color: #fff;
+                font-weight: 600;
+                @include responsive-font-size(20px);
+
+                &:nth-child(2) {
+                    color: #fff;
+                    font-weight: 400;
+                    @include responsive-font-size(20px);
+                }
+            }
+
+            h3 {
+                color: #fff;
+                font-weight: 400;
+                @include responsive-font-size(100px);
+            }
+
+        }
+    }
+
 
 }
