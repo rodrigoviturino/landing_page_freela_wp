@@ -4,7 +4,7 @@
     <!-- <span class="pricing__card-tips">Recomendado</span> -->
     <header>
         <a href="#">
-            <img src="assets/images/price1.png" alt="">
+            <img src="<?php echo get_template_directory_uri(); ?>'/assets/images/price1.png'" alt="">
         </a>
         <span class="plan">Website</span>
         <span class="value"> R$ 999 </span>
@@ -45,7 +45,7 @@
     <span class="pricing__card-tips">Recomendado</span>
     <header>
         <a href="#">
-            <img src="assets/images/price1.png" alt="">
+            <img src="<?php echo get_template_directory_uri(); ?>'/assets/images/price1.png'" alt="">
         </a>
         <span class="plan">Website + Ecommerce</span>
         <span class="value"> R$ 999 </span>
@@ -85,7 +85,7 @@
 <div class=" pricing__card">
     <header>
         <a href="#">
-            <img src="assets/images/price1.png" alt="">
+            <img src="<?php echo get_template_directory_uri(); ?>'/assets/images/price1.png'" alt="">
         </a>
         <span class="plan">Sistema Web</span>
         <span class="value"> R$ 999 </span>

@@ -1,12 +1,13 @@
-<div class="row">
-            <div class="col-md-6">
-                <div class="portfolio__block-title">
-                    <h2>Featured projects</h2>
-                    <p>There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration.</p>
-                </div>
+    <div class="row">
+        <div class="col-md-6">
+            <div class="portfolio__block-title">
+                <h2>Featured projects</h2>
+                <p>There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration.</p>
             </div>
         </div>
     </div>
+</div> <!-- end Container -->
+
 
     <section class="portfolio__slide responsive">
 
@@ -72,3 +73,6 @@
         </div>
 
     </section>
+
+    </div>
+</section>

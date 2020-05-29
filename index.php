@@ -32,8 +32,7 @@
 <section class="portfolio">
     <div class="container">
       <?php get_template_part("template_parts/home", "portfolio"); ?>
-    </div>
-</section>
+
 <!-- end Portfolio -->
 
 <!-- Call to Action -->

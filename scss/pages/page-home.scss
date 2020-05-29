@@ -221,6 +221,9 @@
   }
 
   &__image {
+    img {
+      border-radius: 10px;
+    }
   }
 }
 
@@ -611,6 +614,7 @@
     margin: 0 auto;
     position: relative;
     transition: all 0.7s;
+    border-radius: 8px;
 
     &:hover {
       background-image: -webkit-linear-gradient(left, #f61b10, #ef0963);
@@ -672,12 +676,20 @@
       align-items: center;
       right: 0;
       background-color: $purple;
+      border-top-right-radius: 7px;
+      border-bottom-left-radius: 7px;
       padding: map-get($spacers, 1) map-get($spacers, 4);
     }
 
     header {
       text-align: center;
       padding-top: map-get($spacers, 5);
+
+      a {
+        img {
+          margin: 0 auto;
+        }
+      }
 
       .plan {
         font-weight: 600;
@@ -756,7 +768,7 @@
   padding: 80px 0;
   display: flex;
   align-items: center;
-  margin-bottom: 160px;
+  // margin-bottom: 160px;
 
   &__block-title {
     padding-bottom: map-get($spacers, 5);
