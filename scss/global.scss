@@ -1,31 +1,30 @@
 body {
-    // font-family: 'Roboto', sans-serif;
-    background-image: url('assets/images/bg-body.png');
-    background-color: #232531;
-    font-family: 'Montserrat', sans-serif;
+  // font-family: 'Roboto', sans-serif;
+  background-image: url("assets/images/bg-body.png");
+  background-color: #232531;
+  font-family: "Montserrat", sans-serif;
 }
 
-
 .divisor-internal {
-    padding: 15px 0;
+  padding: 15px 0;
 }
 
 .divisor {
-    height: 0.7px;
-    width: 100%;
-    margin: map-get($spacers, 1) 0;
-    display: inline-block;
-    background-color: #ddd;
+  height: 0.7px;
+  width: 100%;
+  margin: map-get($spacers, 1) 0;
+  display: inline-block;
+  background-color: #ddd;
 }
 
 .slick-slide {
-    width: 20.5% ;
-    margin: 0 40px;
+  width: 20.5%;
+  margin: 0 40px;
 }
 
 .slick-next {
-    right: 18px !important;
+  right: 18px !important;
 }
 .slick-previous {
-    left: -18px !important;
+  left: -18px !important;
 }

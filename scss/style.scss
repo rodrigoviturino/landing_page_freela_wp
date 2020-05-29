@@ -1,5 +1,5 @@
 /*
-    Theme Name: Landing Page
+    Theme Name: Landing Page Freelas
     Author: Rodrigo Viturino
     Description: Landing Page para divulgação serviço
     Version: 1.0.0
@@ -13,21 +13,18 @@
 
 /* Website */
 
-    @import "base/font";
-    @import "global";
+@import "base/font";
+@import "global";
 
-    /* Plugins */
-    @import "plugins/slick/slick.scss";
-    @import "plugins/slick/slick-theme.scss";
-    /* end Plugins */
+/* Plugins */
+@import "plugins/slick/slick.scss";
+@import "plugins/slick/slick-theme.scss";
+/* end Plugins */
 
+/* Pages */
 
-    /* Pages */
-
-    @import "header";
-    @import "pages/page-home";
-    /* end Pages */
-
+@import "header";
+@import "pages/page-home";
+/* end Pages */
 
 /* end Website */
-

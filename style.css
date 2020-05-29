@@ -1,6 +1,6 @@
 @charset "UTF-8";
 /*
-    Theme Name: Landing Page
+    Theme Name: Landing Page Freelas
     Author: Rodrigo Viturino
     Description: Landing Page para divulgação serviço
     Version: 1.0.0
@@ -5281,7 +5281,7 @@ body {
   position: absolute;
   top: 0;
   bottom: 0;
-  left: -81px;
+  left: 0px;
   right: 0px;
   transition: all 0.7s;
 }
@@ -5327,59 +5327,20 @@ body {
   border: solid 2px #fff;
 }
 
-.clientes {
-  background-color: #00000036;
-  padding: 40px 0;
-  display: flex;
-  align-items: center;
-}
-.clientes__block-title h2 {
-  font-weight: 700;
-  color: #fff;
-  position: relative;
-  margin-bottom: 1.5rem;
-  font-size: 3.375rem;
-}
-.clientes__block-title h2:after {
-  content: "";
-  display: block;
-  background-color: #ee076e;
-  height: 3px;
-  position: absolute;
-  left: -60px;
-  width: 100px;
-}
-.clientes__block-title p {
-  color: #c6c9d8;
-  line-height: 30px;
-  font-size: 1.125rem;
-}
-.clientes__box ul {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-.clientes__box ul li {
-  display: flex;
-}
-.clientes__box ul li a img {
-  filter: invert(1);
-}
-
 .cta {
   background-image: url("assets/images/cta.jpg");
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
   position: relative;
-  padding: 100px 0;
+  padding: 160px 0;
   margin: 160px 0;
 }
 .cta .overlay {
   display: block;
   width: 100%;
   height: 100%;
-  background-color: rgba(0, 0, 0, 0.342);
+  background-color: rgba(0, 0, 0, 0.452);
   position: absolute;
   top: 0;
   bottom: 0;
@@ -5422,6 +5383,12 @@ body {
   transition: all 0.7s;
 }
 
+.pricing {
+  margin-bottom: 160px;
+}
+.pricing__block-title {
+  margin-bottom: 3rem;
+}
 .pricing__block-title h2 {
   font-weight: 700;
   color: #fff;
@@ -5444,14 +5411,26 @@ body {
   font-size: 1.125rem;
 }
 .pricing__card {
-  padding: 3rem 1.5rem;
+  padding: 0 3rem;
   background-color: #222;
-  margin: 0 10px;
-}
-.pricing__card header a img {
   margin: 0 auto;
+  position: relative;
+  transition: all 0.7s;
 }
-.pricing__card header .plan {
+.pricing__card:hover {
+  background-image: -webkit-linear-gradient(left, #f61b10, #ef0963);
+  background-image: linear-gradient(90deg, #f61b10, #ef0963);
+  box-shadow: 0 10px 25px 10px rgba(0, 0, 0, 0.1);
+  -webkit-transform: translateY(-5px);
+  transform: translateY(-8px);
+  transition: all 0.5s;
+  border: solid 2px #fff;
+}
+.pricing__card:hover-tips {
+  color: #6f42c1;
+  background-color: #fff;
+}
+.pricing__card:hover header .plan {
   font-weight: 600;
   color: #fff;
   display: block;
@@ -5460,14 +5439,60 @@ body {
   text-transform: capitalize;
   font-size: 1.5rem;
 }
+.pricing__card:hover header .value {
+  color: #fff;
+  border: solid 1px #fff;
+}
+.pricing__card:hover ul li {
+  color: #fff;
+  transition: all 0.7s;
+  border-bottom: solid 1px #f2f2f27e;
+}
+.pricing__card:hover .btn {
+  text-align: center;
+  padding-bottom: 3rem;
+}
+.pricing__card:hover .btn a {
+  color: #f6004c;
+  transition: all 0.7s;
+  background-color: #ffffff;
+  border: solid 2px #f81f01;
+  transition: all 0.7s;
+}
+.pricing__card-tips {
+  position: absolute;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  right: 0;
+  background-color: #6f42c1;
+  padding: 0.25rem 1.5rem;
+}
+.pricing__card header {
+  text-align: center;
+  padding-top: 3rem;
+}
+.pricing__card header .plan {
+  font-weight: 600;
+  color: #fff;
+  display: block;
+  transition: all 0.7s;
+  text-align: center;
+  margin-bottom: 1rem;
+  text-transform: capitalize;
+  font-size: 1.5rem;
+}
 .pricing__card header .value {
   font-weight: 600;
   color: #f6004c;
-  display: block;
+  display: inline-block;
   border: solid 1px #6b6b6b9a;
   text-transform: capitalize;
+  transition: all 0.7s;
   border-radius: 50px;
-  padding: 0.25rem 0;
+  margin: 0 auto;
+  padding: 0.25rem 3rem;
   text-align: center;
   margin-bottom: 1.5rem;
   font-size: 2.625rem;
@@ -5477,6 +5502,7 @@ body {
   align-items: center;
   justify-content: space-between;
   text-transform: capitalize;
+  transition: all 0.7s;
   color: #8d8d8d;
   border-bottom: solid 1px #777;
   padding: 0.5rem 0;
@@ -5484,6 +5510,8 @@ body {
 }
 .pricing__card .btn {
   text-align: center;
+  padding-bottom: 3rem;
+  transition: all 0.7s;
 }
 .pricing__card .btn a {
   color: #fff;
@@ -5505,6 +5533,155 @@ body {
   color: #f6004c;
   transition: all 0.7s;
   border: solid 2px #f6004c;
+}
+
+.customers {
+  background-color: #00000036;
+  padding: 80px 0;
+  display: flex;
+  align-items: center;
+  margin-bottom: 160px;
+}
+.customers__block-title {
+  padding-bottom: 3rem;
+}
+.customers__block-title h2 {
+  font-weight: 700;
+  color: #fff;
+  position: relative;
+  margin-bottom: 1.5rem;
+  font-size: 3.375rem;
+}
+.customers__block-title h2:after {
+  content: "";
+  display: block;
+  background-color: #ee076e;
+  height: 3px;
+  position: absolute;
+  left: -60px;
+  width: 100px;
+}
+.customers__block-title p {
+  color: #c6c9d8;
+  line-height: 30px;
+  font-size: 1.125rem;
+}
+.customers__box ul {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.customers__box ul li {
+  display: flex;
+}
+.customers__box ul li a img {
+  filter: invert(1);
+}
+
+.contact {
+  padding: 100px 0;
+  background: -webkit-linear-gradient(305deg, #f81f01, #ee076e);
+  background: linear-gradient(145deg, #f81f01, #ee076e);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+  border-top: solid 2px #fff;
+  border-bottom: solid 2px #fff;
+  z-index: 2;
+}
+.contact:before {
+  content: "";
+  display: block;
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  background-image: url("assets/images/bg-footer.png");
+  opacity: 0.5;
+  z-index: -1;
+}
+.contact__block-title {
+  text-align: center;
+  padding-bottom: 3rem;
+}
+.contact__block-title span {
+  color: #fff;
+  font-weight: 400;
+  line-height: 26px;
+  font-size: 0.9375rem;
+}
+.contact__block-title h2 {
+  color: #fff;
+  font-weight: bold;
+  line-height: 90px;
+  font-size: 4.6875rem;
+}
+.contact__form #form-home .group {
+  margin-bottom: 1rem;
+}
+.contact__form #form-home .group input {
+  background-color: transparent;
+  border: solid 2px rgba(255, 255, 255, 0.2);
+  padding: 1rem;
+  border-radius: 5px;
+  width: 100%;
+  color: #fff;
+}
+.contact__form #form-home .group input::placeholder {
+  color: #fff;
+  font-weight: 500;
+  font-size: 0.9375rem;
+}
+.contact__form #form-home textarea {
+  display: block;
+  width: 100%;
+  background-color: transparent;
+  border: solid 2px rgba(255, 255, 255, 0.2);
+  padding: 1rem;
+  margin-bottom: 1rem;
+  color: #fff;
+}
+.contact__form #form-home textarea::placeholder {
+  color: #fff;
+  font-weight: 500;
+  font-size: 0.9375rem;
+}
+.contact__form #form-home button {
+  color: #ef0963;
+  transition: all 0.7s;
+  font-weight: 600;
+  padding: 0.5rem 3rem;
+  background-color: #fff;
+  border: solid 2px #fff;
+  transition: all 0.7s;
+  border-radius: 5px;
+  font-size: 1.0625rem;
+}
+.contact__form #form-home button:hover {
+  transition: all 0.7s;
+  background-color: #ef0963;
+  color: #fff;
+}
+
+.footer {
+  padding: 1rem 0;
+}
+.footer ul {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+}
+.footer ul li a {
+  color: #fff;
+  transition: all 0.7s;
+  text-decoration: none;
+}
+.footer ul li a:hover {
+  transition: all 0.7s;
+  color: #f81f01;
 }
 
 /* end Pages */
