@@ -28,3 +28,33 @@ body {
 .slick-previous {
   left: -18px !important;
 }
+
+/* Plugin Swiper Slider */
+.swiper-container {
+  width: 100%;
+  height: 100%;
+  padding-top: map-get($spacers, 4);
+
+  .swiper-slide {
+    // background-color: #ccc;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 60px;
+    width: auto;
+  }
+
+  .swiper-button-prev {
+    color: #f6004c;
+  }
+  .swiper-button-next {
+    color: #f6004c;
+  }
+
+  .swiper-pagination {
+    .swiper-pagination-bullet-active {
+      background-color: #f6004c;
+    }
+  }
+}
+/* end Plugin Swiper Slider */

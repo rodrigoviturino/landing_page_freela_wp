@@ -416,7 +416,8 @@
           // bottom: 0;
           // right: 0;
           position: relative;
-          width: 392px;
+          // width: 392px;
+          width: 100%;
           right: 0;
           left: 0;
           background-color: #f6004e62;
@@ -461,9 +462,11 @@
         position: absolute;
         bottom: 0;
         transition: all 0.7s;
+        width: 100%;
 
         img {
           border-radius: 8px;
+          width: 100%;
         }
       }
 
@@ -615,6 +618,7 @@
     position: relative;
     transition: all 0.7s;
     border-radius: 8px;
+    border: solid 2px transparent;
 
     &:hover {
       background-image: -webkit-linear-gradient(left, #f61b10, #ef0963);
@@ -649,7 +653,7 @@
       ul {
         li {
           color: $white;
-          transition: all 0.7s;
+          transition: all 0.5s;
           border-bottom: solid 1px #f2f2f27e;
         }
       }
@@ -660,7 +664,7 @@
 
         a {
           color: #f6004c;
-          transition: all 0.7s;
+          transition: all 0.5s;
           background-color: #ffffff;
           border: solid 2px #f81f01;
           transition: all 0.7s;

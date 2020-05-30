@@ -16,12 +16,6 @@
 @import "base/font";
 @import "global";
 
-/* Plugins */
-@import "plugins/slick/slick.scss";
-@import "plugins/slick/slick-theme.scss";
-@import "plugins/swiper-6.0.2/src/swiper.scss";
-/* end Plugins */
-
 /* Pages */
 
 @import "header";
@@ -29,3 +23,8 @@
 /* end Pages */
 
 /* end Website */
+/* Plugins */
+@import "plugins/slick/slick.scss";
+@import "plugins/slick/slick-theme.scss";
+// @import "plugins/swiper-6.0.2/src/swiper.scss";
+/* end Plugins */
