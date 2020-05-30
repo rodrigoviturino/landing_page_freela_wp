@@ -28,6 +28,18 @@
 </section>
 <!-- end Services -->
 
+<!-- Work Process -->
+<section class="work-process">
+    <div class="container">
+        <div class="work-process__block-title">
+            <h2>Our work process</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur</p>
+        </div>
+        <?php get_template_part("template_parts/home", "timeline-process"); ?>
+    </div>
+</section>
+<!-- end Work Process -->
+
 <!-- Portfolio -->
 <section class="portfolio">
     <div class="container">

@@ -169,7 +169,7 @@
     height: 60px;
     width: 3px;
     margin: 0 auto;
-    bottom: -110px;
+    bottom: -200px;
     position: absolute;
   }
 
@@ -228,6 +228,7 @@
 }
 
 .services {
+  padding-top: 160px;
   margin-bottom: 160px;
   display: flex;
   flex-direction: column;
@@ -242,7 +243,7 @@
     height: 60px;
     width: 3px;
     margin: 0 auto;
-    bottom: -110px;
+    bottom: -200px;
     position: absolute;
   }
 
@@ -347,7 +348,80 @@
   }
 }
 
+.work-process {
+  padding: 160px 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+
+  &::after {
+    content: "";
+    display: block;
+    background-color: #ee076e;
+    height: 60px;
+    width: 3px;
+    margin: 0 auto;
+    bottom: -50px;
+    position: absolute;
+  }
+
+  &__block-title {
+    padding-bottom: 100px;
+
+    h2 {
+      color: #fff;
+      font-weight: $font-weight-bold;
+      line-height: 81px;
+      @include responsive-font-size(54px);
+    }
+    p {
+      font-weight: 400;
+      color: #c6c9d8;
+      @include responsive-font-size(18px);
+    }
+  }
+
+  &__wrapper {
+    &__card {
+      position: relative;
+      // padding: 0 70px;
+
+      span {
+        display: inline-block;
+        position: absolute;
+        top: -85px;
+        left: -30px;
+        background: -webkit-linear-gradient(#f81e0185, #ee076f73);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        z-index: -1;
+        @include responsive-font-size(150px);
+      }
+
+      h2 {
+        color: rgba(255, 255, 255, 0.884);
+        z-index: 1;
+        text-transform: uppercase;
+        font-weight: 600;
+        padding: 0 20px;
+        padding-bottom: map-get($spacers, 2);
+        @include responsive-font-size(20px);
+      }
+
+      p {
+        color: #e9e9e9bd;
+        z-index: 1;
+        // padding: 0 70px 0 0;
+        padding: 0 20px;
+        @include responsive-font-size(16px);
+      }
+    }
+  }
+}
+
 .portfolio {
+  padding-top: 160px;
   &__block-title {
     margin-bottom: map-get($spacers, 5);
     h2 {
@@ -583,6 +657,21 @@
 
 .pricing {
   margin-bottom: 160px;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  &::after {
+    content: "";
+    display: block;
+    background-color: #ee076e;
+    height: 60px;
+    width: 3px;
+    margin: 0 auto;
+    bottom: -200px;
+    position: absolute;
+  }
 
   &__block-title {
     margin-bottom: map-get($spacers, 5);
@@ -770,9 +859,22 @@
 .customers {
   background-color: #00000036;
   padding: 80px 0;
+  position: relative;
+  // margin-bottom: 160px; position: relative;
   display: flex;
   align-items: center;
-  // margin-bottom: 160px;
+  justify-content: center;
+
+  &::after {
+    content: "";
+    display: block;
+    background-color: #ee076e;
+    height: 60px;
+    width: 3px;
+    margin: 0 auto;
+    bottom: -30px;
+    position: absolute;
+  }
 
   &__block-title {
     padding-bottom: map-get($spacers, 5);
