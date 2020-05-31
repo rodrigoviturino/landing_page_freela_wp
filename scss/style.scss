@@ -11,6 +11,13 @@
 @import "base/reset";
 /* end Boostrap 4 */
 
+/* Plugins */
+@import "plugins/slick/slick.scss";
+@import "plugins/slick/slick-theme.scss";
+@import "plugins/contact_form.scss";
+// @import "plugins/swiper-6.0.2/src/swiper.scss";
+/* end Plugins */
+
 /* Website */
 
 @import "base/font";
@@ -23,8 +30,3 @@
 /* end Pages */
 
 /* end Website */
-/* Plugins */
-@import "plugins/slick/slick.scss";
-@import "plugins/slick/slick-theme.scss";
-// @import "plugins/swiper-6.0.2/src/swiper.scss";
-/* end Plugins */

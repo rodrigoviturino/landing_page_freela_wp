@@ -7,26 +7,15 @@
             </div>
 
             <div class="col-md-4 form">
-                <form action="#">
-                    <header>
-                        <h2>Titulo Principal</h2>
-                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit.</p>
-                    </header>
-                    <div class="group">
-                        <!-- <label for="nome">Nome</label> -->
-                        <input type="text" placeholder="Nome Completo">
-                    </div>
-                    <div class="group">
-                        <!-- <label for="nome">Nome</label> -->
-                        <input type="email" placeholder="Email">
-                    </div>
-                    <div class="group">
-                        <!-- <label for="nome">Nome</label> -->
-                        <input type="text" placeholder="Número para contato">
-                    </div>
+                <header>
+                    <h2>Titulo Principal</h2>
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit.</p>
+                </header>
+                <?php echo do_shortcode( '[contact-form-7 id="31" title="Contact form 1"]' ); ?>
 
-                    <button type="submit" class="btn">Enviar</button>
-                </form>
+                
+                
+
             </div>
 
         </div>

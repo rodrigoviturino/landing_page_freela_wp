@@ -1,5 +1,10 @@
 <?php get_header(); ?>
 
+<?php 
+    $background_large = wp_get_attachment_image_src($imagem_id, 'large'); // Escolha o tamanho
+	$background_medium = wp_get_attachment_image_src($imagem_id, 'medium');
+?>
+
 <!-- Introduction -->
 <section class="intro">
     <div class="container">

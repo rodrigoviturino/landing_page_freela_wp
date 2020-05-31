@@ -83,25 +83,25 @@
     border: solid 1px #ff573352;
     background-color: #00000036;
 
-    form {
-      header {
-        margin-bottom: map-get($spacers, 4);
+    header {
+      margin-bottom: map-get($spacers, 4);
 
-        h2 {
-          background: -webkit-linear-gradient(#f81f01, #ee076e);
-          -webkit-background-clip: text;
-          -webkit-text-fill-color: transparent;
-          text-align: center;
-          @include responsive-font-size(30px);
-        }
-
-        p {
-          color: $white;
-          text-align: center;
-          @include responsive-font-size(14px);
-        }
+      h2 {
+        background: -webkit-linear-gradient(#f81f01, #ee076e);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        text-align: center;
+        @include responsive-font-size(30px);
       }
 
+      p {
+        color: $white;
+        text-align: center;
+        @include responsive-font-size(14px);
+      }
+    }
+
+    form {
       .group {
         margin-bottom: map-get($spacers, 3);
       }
@@ -460,7 +460,8 @@
 
     .card {
       position: relative;
-      height: 532px;
+      // height: 532px;
+      height: 453px;
       width: 390px;
       display: flex;
       justify-content: space-between;

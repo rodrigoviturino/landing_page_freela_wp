@@ -15,7 +15,7 @@
             <div class="card swiper-slide">
 
                 <div class="card-image">
-                    <img src="<?php echo get_template_directory_uri(); ?>'/assets/images/portfolio-2.jpg'" alt="">
+                    <img src="http://f4bd26c4c4fa.ngrok.io/wp-content/uploads/2020/05/rodrigo-viturino-4.jpg" alt="">
                 </div>
 
                 <div class="card-info">
@@ -30,7 +30,7 @@
 
                 <div class="card-image">
                     <a href="#">
-                        <img src="<?php echo get_template_directory_uri(); ?>'/assets/images/portfolio-3.jpg'" alt="">
+                        <img src="/wp-content/uploads/2020/05/rodrigo-viturino-5.jpg" alt="">
                     </a>
                 </div>
 
@@ -45,7 +45,7 @@
             <div class="card swiper-slide">
                     <div class="card-image">
                         <a href="#">
-                            <img src="<?php echo get_template_directory_uri(); ?>'/assets/images/portfolio-6.jpg'" alt="">
+                            <img src="/wp-content/uploads/2020/05/rodrigo-viturino-6.jpg" alt="">
                         </a>
                     </div>
 
@@ -61,7 +61,7 @@
 
                 <div class="card-image">
                     <a href="#">
-                        <img src="<?php echo get_template_directory_uri(); ?>'/assets/images/portfolio-6.jpg'" alt="">
+                        <img src="http://f4bd26c4c4fa.ngrok.io/wp-content/uploads/2020/05/rodrigo-viturino-4.jpg" alt="">
                     </a>
                 </div>
 

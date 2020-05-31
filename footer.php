@@ -21,7 +21,7 @@
 
 <script>
   let swiper = new Swiper('.swiper-container', {
-      slidesPerView: 3,
+      slidesPerView: 4,
       spaceBetween: 30,
       loop: true,
       pagination: {

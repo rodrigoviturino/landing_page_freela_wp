@@ -19,7 +19,7 @@
 
 <div class="col-md-6 about__image">
     <a href="#">
-        <img src="<?php echo get_template_directory_uri(); ?>'/assets/images/about.jpg'" alt="">
+        <img src="/wp-content/uploads/2020/05/rodrigo-viturino-about.jpg" alt="">
     </a>
 </div>
 

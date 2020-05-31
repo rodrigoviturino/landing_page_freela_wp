@@ -15,10 +15,13 @@
 <header class="header">
     <div class="container-fluid">
         <div class="header__wrapper">
-
-            <a href="#" class="header__wrapper__logo">
-                <img src="<?php echo get_template_directory_uri();?>'/assets/images/logo.png' " alt="Logo">
-            </a>
+            <!-- <a href="#" class="header__wrapper__logo"> -->
+            <?php 
+                if(has_custom_logo( ) ) {
+                    the_custom_logo();
+                }
+            ?>
+            <!-- </a> -->
 
             <nav>
                 <ul>

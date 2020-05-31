@@ -1,0 +1,56 @@
+#wpcf7-f5-o1 {
+  .wpcf7-form {
+    input {
+      border: solid 1px #222;
+      width: 100%;
+      color: #a1abbd;
+      padding: map-get($spacers, 2) map-get($spacers, 3);
+      margin-bottom: map-get($spacers, 3);
+      background-color: #202228;
+      border-radius: 5px;
+
+      &::placeholder {
+        color: #fff;
+        @include responsive-font-size(14px);
+      }
+    }
+
+    .wpcf7-submit {
+      color: $white;
+      font-weight: $font-weight-bold;
+      background: rgb(248, 31, 1);
+      background: linear-gradient(
+        90deg,
+        rgba(248, 31, 1, 1) 0%,
+        rgba(238, 7, 110, 1) 100%
+      );
+      display: inline-block;
+      width: 100%;
+      border: solid 2px transparent;
+      padding: map-get($spacers, 2) map-get($spacers, 4);
+      transition: all 0.7s;
+      border-radius: 5px;
+      margin-bottom: 0;
+      @include responsive-font-size(18px);
+
+      &:hover {
+        // background-color: $white;
+        background: rgb(238, 7, 110);
+        background: linear-gradient(
+          90deg,
+          rgba(238, 7, 110, 1) 0%,
+          rgba(248, 31, 1, 1) 100%
+        );
+        border: solid 2px #fff;
+        color: rgb(221, 221, 221);
+        transition: all 0.7s;
+      }
+    }
+  }
+  .div.wpcf7-mail-sent-error {
+    color: rgba(255, 0, 0, 0.603) !important;
+  }
+}
+.wpcf7-mail-sent-ok {
+  color: #fff !important;
+}

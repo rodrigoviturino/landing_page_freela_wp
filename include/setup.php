@@ -15,3 +15,7 @@ function lf_theme_styles(){
   wp_enqueue_script("lf_plugins_js", $directory."/assets/js/lib/plugins.js", ["lf_jquery_js"] );
 
 }
+
+function lf_after_setup() {
+  add_theme_support( "custom-logo");
+}
