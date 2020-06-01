@@ -119,11 +119,6 @@
           color: #fff;
           @include responsive-font-size(14px);
         }
-        // &:focus {
-        //   background: -webkit-linear-gradient(#f81f01, #ee076e);
-        //   -webkit-background-clip: text;
-        //   -webkit-text-fill-color: transparent;
-        // }
       }
 
       select {
