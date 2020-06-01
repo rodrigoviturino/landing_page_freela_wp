@@ -5049,7 +5049,8 @@ body {
 }
 .intro .form {
   padding: 1.5rem 1.5rem;
-  border: solid 1px #ff573352;
+  border: solid 2px #ff573352;
+  border-radius: 5px;
   background-color: #00000036;
 }
 .intro .form header {
@@ -5081,6 +5082,35 @@ body {
 .intro .form form input::placeholder {
   color: #fff;
   font-size: 0.875rem;
+}
+.intro .form form select {
+  width: 100%;
+  background-color: #202228;
+  border: solid 1px transparent;
+  margin-bottom: 1rem;
+  color: #fff;
+  padding: 0.5rem 1rem;
+}
+.intro .form form select option {
+  background: -webkit-linear-gradient(#f81f01, #ee076e);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-color: #d4240d;
+  color: #fff;
+  font-size: 1.125rem;
+}
+.intro .form form textarea {
+  width: 100%;
+  height: 120px;
+  margin-bottom: 1rem;
+  padding: 0.5rem 1rem;
+  background-color: #202228;
+  border: solid 1px transparent;
+  border-radius: 5px;
+  color: #a1abbd;
+}
+.intro .form form textarea::placeholder {
+  color: #fff;
 }
 .intro .form form .btn {
   color: #fff;

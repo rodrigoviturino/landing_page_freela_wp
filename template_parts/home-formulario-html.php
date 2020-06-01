@@ -1,5 +1,5 @@
     <!-- * Formulario HTML * -->
-    <form method="POST" name="sentMessage" id="contactForm" action="contact_me.php" novalidate>
+    <form method="POST" name="sentMessage" id="contactForm" action="mail.php">
           <header>
               <h2>Titulo Principal</h2>
               <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit.</p>
